@@ -21,6 +21,7 @@ def get_db():
     return all_data
 
 #это написала Владаbbbb
+#это написал Миша....
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(g, '_database', None)
