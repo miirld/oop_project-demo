@@ -7,21 +7,28 @@ app.secret_key = "qmcskljewfi13oj_wea323klfmfoik"
 
 @app.route("/")
 def index():
-    data = get_db()
-    return render_template("index.html", all_data = data)
+    return render_template("index.html")
 
 
-def get_db():
+@app.route("/<letter>")
+def letters(letter):
+    data = get_db(letter)
+    return render_template("letter.html", all_data=data, letter=letter)
+
+
+def get_db(letter):
     db = getattr(g, '_database', None)
     if db is None:
         db = g._database = sqlite3.connect('oop-demo.db')
         cursor = db.cursor()
         cursor.execute("select * from graduates")
-        all_data = cursor.fetchall()
+        raw_data = cursor.fetchall()
+        all_data = [idx for idx in raw_data if idx[0].lower().startswith(letter.lower())]
     return all_data
 
-#это написала Владаbbbb
-#это написал Миша....
+
+# это написала Владаbbbb
+# это написал Миша....
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(g, '_database', None)
