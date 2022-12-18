@@ -20,6 +20,7 @@ def get_db():
         all_data = cursor.fetchall()
     return all_data
 
+#это написала Влада
 
 @app.teardown_appcontext
 def close_connection(exception):
