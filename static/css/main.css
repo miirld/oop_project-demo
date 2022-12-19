@@ -6,14 +6,19 @@ a{
     color: black;
     font-family: "Montserrat SemiBold";
     font-size: 30px;
-
 }
-.search{
+
+.title-one{
+    font-size: 50px;
+    display: flex;
+}
+.search-os{
+    display: flex;
     margin-left: 100px;
     text-align: center;
 }
 
-.search1:hover {
+.search-one:hover {
     transition: transform 0.2s linear;
 
 }
