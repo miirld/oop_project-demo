@@ -1,77 +1,44 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
-    </head>
-    <body>
-        <p>Это стартовая страница сайт</p>
-        <a href="/А">А</a>
-        <a href="/Б">Б</a>
-        <a href="/В">В</a>
-        <a href="/Г">Г</a>
-        <a href="/Д">Д</a>
-        <a href="/Е">Е</a>
-        <a href="/Ё">Ё</a>
-        <a href="/Ж">Ж</a>
-        <a href="/З">З</a>
-        <a href="/И">И</a>
-        <a href="/Й">Й</a>
-        <a href="/К">К</a>
-        <a href="/Л">Л</a>
-        <a href="/М">М</a>
-        <a href="/Н">Н</a>
-        <a href="/О">О</a>
-        <a href="/П">П</a>
-        <a href="/Р">Р</a>
-        <a href="/С">С</a>
-        <a href="/Т">Т</a>
-        <a href="/У">У</a>
-        <a href="/Ф">Ф</a>
-        <a href="/Х">Х</a>
-        <a href="/Ц">Ц</a>
-        <a href="/Ч">Ч</a>
-        <a href="/Ш">Ш</a>
-        <a href="/Щ">Щ</a>
-        <a href="/Э">Э</a>
-        <a href="/Ю">Ю</a>
-        <a href="/Я">Я</a>
-        <div class="form-wrap">
-            <div class="profile"><img src="https://www.pnp.ru/upload/entities/2021/03/04/13/article/detailPicture/bb/c0/d0/4f/51f2e413ea103d417986136ae3353bda.jpg">
-                <h1>Регистрация</h1>
-            </div>
-            <form method="post" action="form.php">
-                <div>
-                    <label for="name">Имя</label>
-                    <input type="text" name="name" required>
-                </div>
-                <div class="radio">
-                    <span>Пол</span>
-                    <label>
-                        <input type="radio" name="sex" value="мужской">мужской
-                        <div class="radio-control male"></div>
-                    </label>
-                    <label>
-                        <input type="radio" name="sex" value="женский">женский
-                        <div class="radio-control female"></div>
-                    </label>
-                </div>
-                <div>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" required>
-                </div>
-                <div>
-                    <label for="country">Страна</label>
-                    <select name="country">
-                        <option>Выберите страну проживания</option>
-                        <option value="Россия">Россия</option>
-                        <option value="Украина">Украина</option>
-                        <option value="Беларусь">Беларусь</option>
-                    </select>
-                    <div class="select-arrow"></div>
-                </div>
-                <button type="submit">Отправить</button>
-            </form>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+<p>Это стартовая страница сайт</p>
+
+    <div class="search">
+        <a href="/А" class="search1">А</a>
+        <a class="search1" href="/Б">Б</a>
+        <a class="search1" href="/В">В</a>
+        <a class="search1" href="/Г">Г</a>
+        <a class="search1" href="/Д">Д</a>
+        <a class="search1" href="/Е">Е</a>
+        <a class="search1" href="/Ё">Ё</a>
+        <a class="search1" href="/Ж">Ж</a>
+        <a class="search1" href="/З">З</a>
+        <a class="search1" href="/З">З</a>
+        <a class="search1" href="/И">И</a>
+        <a class="search1" href="/Й">Й</a>
+        <a class="search1" href="/К">К</a>
+        <a class="search1" href="/Л">Л</a>
+        <a class="search1" href="/М">М</a>
+        <a class="search1" href="/Н">Н</a>
+        <a class="search1" href="/О">О</a>
+        <a class="search1" href="/П">П</a>
+        <a class="search1" href="/Р">Р</a>
+        <a class="search1" href="/С">С</a>
+        <a class="search1" href="/Т">Т</a>
+        <a class="search1" href="/У">У</a>
+        <a class="search1" href="/Ф">Ф</a>
+        <a class="search1" href="/Х">Х</a>
+        <a class="search1" href="/Ц">Ц</a>
+        <a class="search1" href="/Ч">Ч</a>
+        <a class="search1" href="/Ш">Ш</a>
+        <a class="search1" href="/Щ">Щ</a>
+        <a class="search1" href="/Э">Э</a>
+        <a class="search1" href="/Ю">Ю</a>
+        <a class="search1" href="/Я">Я</a>
+    </div>
+</body>
 </html>
