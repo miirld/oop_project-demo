@@ -29,6 +29,7 @@ def get_db(letter):
 
 # это написала Владаbbbb
 # это написал Миша....
+# и это тоже написал Миша
 @app.teardown_appcontext
 def close_connection(exception):
     db = getattr(g, '_database', None)
