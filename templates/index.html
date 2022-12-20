@@ -43,6 +43,21 @@
         <a href="/Ю" class="search-one">Ю</a>
         <a href="/Я" class="search-one">Я</a>
     </div>
+    <div>
+        <form action="" method="post">
+            <p></p><label for="name">Фио</label></p>
+            <p></p><input type="text" name="name"></p>
+
+	        <p><label for="biography">Биография</label></p>
+            <p><input type="text" name="biography"></p>
+	        <p>
+	            <input type="submit">
+	        </p>
+            {% if message %}
+                    <p>{{ message }}</p>
+            {% endif %}
+        </form>
+    </div>
 </div>
 
 </body>

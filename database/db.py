@@ -1,7 +1,7 @@
 import sqlite3
 from Scripts import parser
 
-db = sqlite3.connect('oop-demo.db')
+db = sqlite3.connect('database/oop_demo.db')
 sql = db.cursor()
 
 sql.execute("""CREATE TABLE IF NOT EXISTS graduates(
