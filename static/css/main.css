@@ -13,13 +13,17 @@ a{
     display: flex;
 }
 .search-os{
-    display: flex;
     margin-left: 100px;
     text-align: center;
 }
 
+.search-one {
+	font-size: 35pt;
+    margin: 15pt;
+	transition: font-size 1s ;
+}
 .search-one:hover {
-    transition: transform 0.2s linear;
+    font-size: 40pt;
 
 }
 
